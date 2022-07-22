@@ -1,0 +1,122 @@
+.one
+{
+    color: rgb(0, 92, 31);
+    background-color: rgb(241, 251, 137) ;
+    font-weight: bold;
+    font-size: 22px;
+}
+bodY
+{
+    background: linear-gradient(90deg, rgb(4, 4, 4), transparent),
+    rgb(89, 101, 139) repeating-linear-gradient(45deg, rgb(68, 79, 115)0%,rgb(149, 166, 254)5%, transparent 5%, transparent 10%);
+    color: rgb(255, 168, 47);
+    font-weight: bolder;
+    font-size: 22px;
+    font-style: sans-serif;
+    
+}
+.buttonx
+{
+    position: center;
+    display: inline-block;
+    padding: 5px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.buttonx:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+.buttonx span
+{
+    position: absolute;
+    display: block;
+}
+.buttonx span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.buttonx:hover span:nth-child(1)
+{
+    left: 100%;
+    transition:1s;
+}
+.buttonx span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.buttonx:hover span:nth-child(3)
+{
+    right: 100%;
+    transition:1s;
+    transition-delay: 0.5s;
+}
+.buttonx span:nth-child(2)
+{
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.buttonx:hover span:nth-child(2)
+{
+    right: 100%;
+    transition:1s;
+    transition-delay: 0.25s;
+}
+.buttonx span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.buttonx:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition:1s;
+    transition-delay: 0.75s;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(250, 81, 81), rgb(255, 149, 0), rgb(247, 226, 124));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 15s linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 0, 0, 0);
+    font-weight: bolder;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }

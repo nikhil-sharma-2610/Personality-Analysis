@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Personality
+    </title>
+    <link rel="stylesheet" type="text/css" href="Trait.css" />
+</head>
+
+<body>
+    <div class="X">
+        <div class="card">
+            <div class="content">
+                <h1>STRENGTHS</h1>
+                <p id="Traity1"></p>
+                <p id="Traity2"></p>
+                <p id="Traity3"></p>
+                <p id="Traity4"></p>
+                <p id="Traity5"></p>
+                <p id="Traity6"></p>
+                <script>
+                    document.getElementById("Traity1").innerHTML=localStorage.getItem("result1");
+                    document.getElementById("Traity2").innerHTML=localStorage.getItem("result2");
+                    document.getElementById("Traity3").innerHTML=localStorage.getItem("result3");
+                    document.getElementById("Traity4").innerHTML=localStorage.getItem("result4");
+                    document.getElementById("Traity5").innerHTML=localStorage.getItem("result5");
+                    document.getElementById("Traity6").innerHTML=localStorage.getItem("result6");
+                </script>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h1 id="M" class="M0"></h1>
+                <script>
+                    document.getElementById("M").innerHTML=localStorage.getItem("N");
+                </script>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>WEAKNESSES</h2>
+                <p id="Traitz1"></p>
+                <p id="Traitz2"></p>
+                <p id="Traitz3"></p>
+                <p id="Traitz4"></p>
+                <p id="Traitz5"></p>
+                <p id="Traitz6"></p>
+                <script>
+                    document.getElementById("Traitz1").innerHTML=localStorage.getItem("res1");
+                    document.getElementById("Traitz2").innerHTML=localStorage.getItem("res2");
+                    document.getElementById("Traitz3").innerHTML=localStorage.getItem("res3");
+                    document.getElementById("Traitz4").innerHTML=localStorage.getItem("res4");
+                    document.getElementById("Traitz5").innerHTML=localStorage.getItem("res5");
+                    document.getElementById("Traitz6").innerHTML=localStorage.getItem("res6");
+                </script>
+                <button><a href='https://editor.wix.com/html/editor/web/renderer/edit/f29d06e8-dbdc-437f-aeaf-7a6455820255?metaSiteId=990f4b02-0f7f-41d2-a6f7-4e9f2a89bdde' alt='Broken Link'>Solution</a></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+        });
+    </script>
+</body>
